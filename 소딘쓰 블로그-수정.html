@@ -1,0 +1,152 @@
+
+<!doctype>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no,initial-scale=1">
+        <title>Sojin Blog</title>
+        <link rel="stylesheet" href="소딘쓰 블로그.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $('.outer-menu-item').hover(function(){
+                    $(this).find('.inner-menu').show();
+                },function(){
+                    $(this).find('.inner-menu').hide();
+                })
+            })
+        </script>
+    </head>
+    
+    <body>
+        <div id="page-wrapper">
+            <header id="main-header">
+                <h1>SOJIN'S BLOG</h1>
+                <h4>숭실대학교 글로벌미디어학부 19학번 이소진</h4>
+            </header>
+            
+            <nav id="main-navigation">
+                <div class="pull-left">
+                    
+                    <ul class="outer-menu">
+                        <li style="display: inline-block" class="outer-menu-item">
+                            <span class="menu-title">공부</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="#">HTML</a></li>
+                                <li class="inner-menu-item"><a href="#">CSS</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li style="display: inline-block"
+                           class="outer-menu-item">
+                            <span class="menu-title">일상</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="#">놀고</a></li>
+                                <li class="inner-menu-item"><a href="#">먹고</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li style="display: inline-block" class="outer-menu-item">
+                            <span class="menu-title">여행</span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="#">미국</a></li>
+                                <li class="inner-menu-item"><a href="#">중국</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="pull-right">
+                    <div class="search-bar">
+                        <form>
+                            <input type="text" class="input-search">
+                            <input type="submit" class="input-search-submit" value="검색">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+            
+            <div id="content">
+               
+                <section id="main-section">
+                    <article>
+                        <div class="article-header">
+                            <h1 class="article-title">고양이는 귀엽다</h1>
+                            <p class="article-date">2020년 3월 12일</p>
+                        </div>
+                        <div class="article-body">
+                            <img src="고양이.jpg">
+                            <br>
+                            <br>
+                            <p>이거슨 귀여운 고먐미,,,아아ㅏ가아가아나도 유어슈 들어가고 싶어
+                            하지만 개발팀은 들어가기 어렵지
+                            </p>
+                            <br>
+                            <p>근데 나는 고양이 안키워. 그리고 나는 강아지 키우고 싶어</p>
+                            <br>
+                        </div>
+                    </article>
+                </section>
+                
+                <aside id="main-aside">
+                    <div class="aside-list">
+                        <h3>공부</h3>
+                        <ul>
+                            <li><a href="https://blog.naver.com/513sojin">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JAVA</a></li>
+                            <!--<li><a href="#">데이터</a></li>
+                            <li><a href="#">데이터</a></li>-->
+                        </ul>
+                    </div>
+                    
+                    <div class="aside-list">
+                        <h3>일상</h3>
+                        <ul>
+                            <li><a href="#">놀고</a></li>
+                            <li><a href="#">일상</a></li>
+                            <li><a href="#">책후기</a></li>
+                            <!--<li><a href="#">데이터</a></li>
+                            <li><a href="#">데이터</a></li>-->
+                        </ul>
+                    </div>
+                    
+                    <div class="aside-list">
+                        <h3>여행</h3>
+                        <ul>
+                            <li><a href="#">미국</a></li>
+                            <li><a href="#">중국</a></li>
+                            <!--<li><a href="#">데이터</a></l
+                            i>
+                            <li><a href="#">데이터</a></li>-->
+                        </ul>
+                    </div>
+                    
+                    <div class="aside-list">
+                        <h3>최근 글</h3>
+                        <ul>
+                            <li><a href="#">데이터</a></li>
+                            <li><a href="#">데이터</a></li>
+                            <li><a href="#">데이터</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="clock">
+                        <h5>지금 시간은?</h5>
+                        <h2 style="background-color:lightsteelblue;"></h2>
+                    </div>
+                        <script src="소딘쓰 블로그.js"></script>
+                </aside>
+            </div>
+            
+            <footer id="main-footer">
+                <a href="#">HTML5 웹 프로그래밍 책을 참고함.</a>
+                <p>별거 없지만 이소진이 한땀 한땀 제작한 블로그</p>
+            </footer>
+        </div>
+    </body>
+</html>
